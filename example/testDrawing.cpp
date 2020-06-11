@@ -1,4 +1,4 @@
-#include "frameBufferDrawer.h"
+#include "../src/frameBufferGraphics.h"
 #include <iostream>
 #include <signal.h>
 using namespace std;
@@ -6,20 +6,18 @@ using namespace std;
 ScreenWriter s;
 
 void SigIntHandler(int param){
-    s.finalize();
+    s.onClose();
     exit(1);
 }
 
 void coreDumpHandler(int param){
-    s.finalize();
+    s.onClose();
     abort();
 }
 
 
 
 int main(){
-
-
     struct sigaction action;
     action.sa_handler = SigIntHandler;
     action.sa_flags = 0;
