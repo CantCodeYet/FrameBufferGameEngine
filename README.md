@@ -1,2 +1,2 @@
 # FrameBufferGraphics
-Personal attempt to write a library to draw to linux framebuffer
+Library to draw to the Linux framebuffer device
