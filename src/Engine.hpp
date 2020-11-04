@@ -1,5 +1,6 @@
-#pragma on
-#include "../libs/FrameBufferGraphics.hpp"
+#ifndef __ENGINE_HPP__
+#define __ENGINE_HPP__
+#include "FrameBufferGraphics.hpp"
 #include "InputDevice.hpp"
 #include <vector>
 #include <linux/input-event-codes.h>
@@ -41,3 +42,4 @@ class Engine : protected ScreenWriter{
 };
 
 
+#endif

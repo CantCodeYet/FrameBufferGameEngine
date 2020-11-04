@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __INPUTDEVICE__HPP__
+#define __INPUTDEVICE__HPP__
 #include <linux/input.h>
 #include <vector>
 #include <string>
@@ -14,3 +15,5 @@ public:
     ~InputDevice();
     std::vector<input_event> readInputEvents();
 };
+
+#endif

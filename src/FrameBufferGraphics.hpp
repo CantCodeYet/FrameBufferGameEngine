@@ -1,3 +1,5 @@
+#ifndef __FRAMEBUFFERGRAPHICS_HPP__
+#define __FRAMEBUFFERGRAPHICS_HPP__
 #include <cstdint>
 #include "../lib/closeable.hpp"
 
@@ -66,3 +68,4 @@ public:
 
 	void line(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1); //draws a line from (x0,y0) to (x1,y1)
 };
+#endif
